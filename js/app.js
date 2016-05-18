@@ -54,9 +54,24 @@ Append the "li" elements inside the "buckets" div that have been already created
 /*Helpful Hints:
 element.className is a property that sets or returns the class name of an element*/
 
+
 var getBuckets = ["Become more famous than that overrated fraud Garfield", "Visit Aoshima (aka Japan's Cat Island)", "Exhaust my entire 9 lives", "Pass DevLeague's coding challenge", "Become the next internet sensation"];
 
 
+//Make a function to make the arrays into a nice list one by one!
+
+function listDaList(listweasel){
+
+	for (i=0;i<listweasel.length;i++){
+
+var bucketList = document.createElement('li');
+//console.log("YOu made it here" + [i]);
+bucketList.id = "daList";
+bucketList.innerHTML = listweasel[i]; 
+buckets.appendChild(bucketList);
+	}
+}
+listDaList(getBuckets);
 
 //Exerise 4
 /*Our motivated Tacocat has been hard at work on its bucket list.  Update the current list to the following:
@@ -64,7 +79,7 @@ var getBuckets = ["Become more famous than that overrated fraud Garfield", "Visi
 
 Declare a variable named changeList and assign it to the getElementsByTagName method.
 */
-
+var changeList = document.getElementsByTagName('li')[0].innerHTML = "Hello World!";
 
 
 //Exercise 5
