@@ -1,15 +1,25 @@
 window.onload = function(){
 
 //Example
-var createElement = document.createElement('h1'); //creating a "h1" element (h1 heading)
-createElement.id = "headline"; //creating an identifier for the 'h1' element
-createElement.innerHTML = "Welcome to Tacocat's internet page."; //adding content to the h1 element
-container.appendChild(createElement); //adds the h1 element to the container div element.
+//variable called Creative Element is made. Create h1 element under document. 
+var makeAnH1 = document.createElement('h1'); //creating a "h1" element (h1 heading)
+makeAnH1.id = "headline"; //creating an identifier for the 'h1' element
+makeAnH1.innerHTML = "W3lcom3 >to> T@cocat's INT∀RNeT page."; //adding content to the h1 element
+container.appendChild(makeAnH1); //adds the h1 element to the container div element.
+
 
 //Exercise 1: 
-/*Declare a variable named catBox and assign its value with the createElement method that will create a 'div' element. Give this 'div' element an id of "meow". 
+/*Declare a variable named catBox and assign its value with the createElement method that will create a 'div' element. 
+Give this 'div' element an id of "meow". 
+*/
 
-Next, add the following text inside this newly created 'div' element:
+var catBox = document.createElement('div');
+catBox.id = "meow";
+catBox.innerHTML = "Overcome its fear of cucumbers!";
+bigBox.appendChild(catBox);
+
+/* Next, add the following text inside this newly 
+created 'div' element:
 "Overcome its fear of cucumbers!"
 
 Append this 'div' element inside the "bigBox" div element that has already been created in the index.html file*/
