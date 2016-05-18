@@ -24,6 +24,7 @@ created 'div' element:
 
 Append this 'div' element inside the "bigBox" div element that has already been created in the index.html file*/
 
+
 /*Helpful Hints:
 document.createElement creates an Element node
 element.id sets or returns the identifier of an element
@@ -37,7 +38,10 @@ node.appendChild() is a method that appends a node as the last child of a node*/
 "Audition for the next musical."
 
 Append this newly created element to the bigBox element.*/
-
+var catBox2 = document.createElement('div');
+catBox2.id = "purr";
+catBox2.innerHTML = "Audition for the next musical.";
+bigBox.appendChild(catBox2);
 
 
 //Exercise 3
