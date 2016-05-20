@@ -66,20 +66,23 @@ function listDaList(listweasel){
 
 var bucketList = document.createElement('li');
 //console.log("YOu made it here" + [i]);
-bucketList.id = "daList";
+bucketList.className = "daList";
 bucketList.innerHTML = listweasel[i]; 
 buckets.appendChild(bucketList);
 	}
 }
+
 listDaList(getBuckets);
 
-//Exerise 4
+//document.getElementById("daList").className = "listClass";
+
+//Exerise 4[]
 /*Our motivated Tacocat has been hard at work on its bucket list.  Update the current list to the following:
 "Become more famous than that overrated fraud Garfield" => "I'm coming for you Felix!"
 
 Declare a variable named changeList and assign it to the getElementsByTagName method.
 */
-var changeList = document.getElementsByTagName('li')[0].innerHTML = "Hello World!";
+	var changeList = document.getElementsByTagName('li')[0].innerHTML = "---Hello World!----";
 
 
 //Exercise 5
@@ -87,7 +90,7 @@ var changeList = document.getElementsByTagName('li')[0].innerHTML = "Hello World
 
 "Exhaust my entire 9 lives" => "I got 1 life to live!"*/
 
-
+	var changeListAgain = document.getElementsByClassName('daList')[1].innerHTML = "-----zzz------";
 
 };
 
